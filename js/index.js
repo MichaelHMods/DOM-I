@@ -50,7 +50,9 @@ navBarATags.forEach((element, index) => {
 // const ctaText = document.getElementByClass(cta-text);
 const ctaHOne = document.querySelectorAll(".cta-text h1");
 ctaHOne.forEach(element => element.textContent = siteContent['cta'][`h1`]);
-console.log(ctaHOne);
 
 
-console.log(navBarATags);
+const ctaButton = document.querySelectorAll(".cta-test button");
+ctaButton.forEach((element, src) => {element.setAttribute = siteContent['cta']['img-src']});
+console.log(ctaButton);
+
