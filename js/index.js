@@ -53,7 +53,6 @@ ctaHOne.forEach(element => element.textContent = siteContent['cta'][`h1`]);
 
 
 const ctaButton = document.querySelectorAll(".cta-text button");
-console.log(ctaButton[0]);
 theCtaButton = ctaButton[0]
 theCtaButton.textContent = siteContent['cta']['button'];
 
@@ -92,16 +91,25 @@ bContentThree = bArea[2];
 bContentOne.textContent = siteContent['main-content']['services-content'];
 bContentTwo.textContent = siteContent['main-content']['product-content'];
 bContentThree.textContent = siteContent['main-content']['vision-content'];
-console.log(bottomArea);
+
+const contactSection = document.querySelectorAll('.contact h4');
+contactHeader = contactSection[0];
+contactHeader.textContent = siteContent['contact']['contact-h4'];
+contactHeader.style.marginBottom = '1.6rem';
+
+const contactSectionInfo = document.querySelectorAll('.contact p');
+cSIOne = contactSectionInfo[0];
+cSITwo = contactSectionInfo[1];
+cSIThree = contactSectionInfo[2];
+cSIOne.textContent = siteContent['contact']['address'];
 
 
+cSITwo.textContent = siteContent['contact']['phone'];
+cSITwo.style.marginBottom = '1.2rem';
+cSIThree.textContent = siteContent['contact']['email'];
+cSIThree.style.marginBottom = '2rem';
 
-
-
-
-
-// const ctaButton = document.querySelectorAll(".cta-test button");
-// ctaButton.forEach((element, src) => {element.setAttribute = siteContent['cta']['img-src']});
-
-// console.log(ctaButton);
-
+const foot = document.querySelectorAll("footer p");
+foo = foot[0];
+foo.textContent = siteContent['footer']['copyright'];
+foo.style.textAlign.center;
