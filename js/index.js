@@ -43,12 +43,8 @@ logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 let navBarATags = document.querySelectorAll("header nav a");
 
-const func myFunc() {
-  const aTags = document.createElement("a");
-  const newA = document.createnewA("Awesome");
-  aTags.appendChild(newA);
-  document.getElementById("myList").appendChild(node);
-}
+const addition = 'Awesome';
+
 
 navBarATags.forEach((element, index) => {
   element.textContent = siteContent['nav'][`nav-item-${index + 1}`]
