@@ -74,6 +74,25 @@ topAboutContent = topPContent[1];
 topFeatureContent.textContent = siteContent['main-content']['features-content'];
 topAboutContent.textContent = siteContent['main-content']['about-content'];
 
+const middleImg = document.querySelector("#middle-img");
+middleImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
+
+const bottomArea = document.querySelectorAll('.bottom-content .text-content h4');
+bottomHeaderOne = bottomArea[0];
+bottomHeaderTwo = bottomArea[1];
+bottomHeaderThree = bottomArea[2];
+bottomHeaderOne.textContent = siteContent['main-content']['services-h4'];
+bottomHeaderTwo.textContent = siteContent['main-content']['product-h4'];
+bottomHeaderThree.textContent = siteContent['main-content']['vision-h4']; 
+
+const bArea = document.querySelectorAll('.bottom-content .text-content p');
+bContentOne = bArea[0];
+bContentTwo = bArea[1];
+bContentThree = bArea[2];
+bContentOne.textContent = siteContent['main-content']['services-content'];
+bContentTwo.textContent = siteContent['main-content']['product-content'];
+bContentThree.textContent = siteContent['main-content']['vision-content'];
+console.log(bottomArea);
 
 
 
