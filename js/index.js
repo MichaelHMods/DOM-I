@@ -43,9 +43,19 @@ logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 let navBarATags = document.querySelectorAll("header nav a");
 
+const func myFunc() {
+  const aTags = document.createElement("a");
+  const newA = document.createnewA("Awesome");
+  aTags.appendChild(newA);
+  document.getElementById("myList").appendChild(node);
+}
+
 navBarATags.forEach((element, index) => {
   element.textContent = siteContent['nav'][`nav-item-${index + 1}`]
+  element.style.color = "green";
+  
 }  );
+
 
 // const ctaText = document.getElementByClass(cta-text);
 const ctaHOne = document.querySelectorAll(".cta-text h1");
