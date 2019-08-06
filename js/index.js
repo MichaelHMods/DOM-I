@@ -52,7 +52,37 @@ const ctaHOne = document.querySelectorAll(".cta-text h1");
 ctaHOne.forEach(element => element.textContent = siteContent['cta'][`h1`]);
 
 
-const ctaButton = document.querySelectorAll(".cta-test button");
-ctaButton.forEach((element, src) => {element.setAttribute = siteContent['cta']['img-src']});
-console.log(ctaButton);
+const ctaButton = document.querySelectorAll(".cta-text button");
+console.log(ctaButton[0]);
+theCtaButton = ctaButton[0]
+theCtaButton.textContent = siteContent['cta']['button'];
+
+const snippetImg = document.getElementById("cta-img");
+snippetImg.setAttribute('src', siteContent['cta']['img-src']);
+
+const topContentHeader = document.querySelectorAll(".top-content .text-content h4");
+console.log(topContentHeader);
+featureHeader = topContentHeader[0];
+featureHeaderTwo = topContentHeader[1];
+//console.log(featureHeader);
+featureHeader.textContent = siteContent["main-content"]['features-h4'];
+featureHeaderTwo.textContent = siteContent['main-content']['about-h4'];
+
+const topPContent = document.querySelectorAll(".top-content .text-content p");
+topFeatureContent = topPContent[0];
+topAboutContent = topPContent[1];
+topFeatureContent.textContent = siteContent['main-content']['features-content'];
+topAboutContent.textContent = siteContent['main-content']['about-content'];
+
+
+
+
+
+
+
+
+// const ctaButton = document.querySelectorAll(".cta-test button");
+// ctaButton.forEach((element, src) => {element.setAttribute = siteContent['cta']['img-src']});
+
+// console.log(ctaButton);
 
