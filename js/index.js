@@ -51,6 +51,19 @@ navBarATags.forEach((element, index) => {
   element.style.color = "green";
   
 }  );
+const newLink1 = document.createElement("a");
+newLink1.textContent = 'Home';
+
+const newLink2 = document.createElement("a");
+newLink2.textContent = 'Login';
+
+const navUpdate = document.querySelector('nav');
+
+navUpdate.prepend(newLink1);
+navUpdate.appendChild(newLink2);
+navUpdate.children[0].style.color = "red";
+navUpdate.children[navUpdate.children.length - 1].style.color = 'red';
+
 
 
 // const ctaText = document.getElementByClass(cta-text);
